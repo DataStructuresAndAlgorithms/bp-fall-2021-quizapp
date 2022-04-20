@@ -20,51 +20,76 @@
                     android:textAlignment="center"
                     android:paddingTop="20dp"
                     android:paddingBottom="20dp"
-                    android:textSize="20sp"/>
-            <ProgressBar
-                    style="?android:attr/progressBarStyleHorizontal"
+                    android:textSize="20dp"
+                    android:fontFamily= "serif-monospace"
+                    android:textStyle="bold"
+            />
+            <LinearLayout
+                    android:orientation="horizontal"
                     android:layout_width="320dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/progressBar"
-                    android:paddingTop="20dp"
-                    android:paddingBottom="20dp"
-                    android:layout_gravity="center_horizontal"/>
+                    android:layout_height="match_parent" android:layout_gravity="center_horizontal">
+                <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="274dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/progressBar"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:layout_gravity="center_horizontal"/>
+                <TextView
+                        android:text="1/5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/textView2"
+                        android:layout_gravity="center" android:textAlignment="center" android:textSize="16dp"
+                        android:fontFamily= "serif-monospace"
+                />
+            </LinearLayout>
             <RadioGroup
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:id="@+id/radioGroup"
-                    android:layout_marginEnd="15dp"
-                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="0dp"
                     android:paddingBottom="40dp"
-                    android:paddingTop="20dp">
+                    android:paddingTop="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp">
                 <RadioButton
                         android:text="James Franco"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/radioButton1"
-                        android:textSize="14sp"
-                        android:minHeight="36dp"/>
+                        android:textSize="16sp"
+                        android:minHeight="36dp"
+                        android:fontFamily="serif-monospace"
+                />
                 <RadioButton
                         android:text="James Gosling"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/radioButton2"
-                        android:textSize="14sp"
-                        android:minHeight="36dp"/>
+                        android:textSize="16sp"
+                        android:minHeight="36dp"
+                        android:fontFamily="serif-monospace"
+                />
                 <RadioButton
                         android:text="Ryan Gosling"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/radioButton3"
-                        android:textSize="14sp"
-                        android:minHeight="36dp"/>
+                        android:textSize="16sp"
+                        android:minHeight="36dp"
+                        android:fontFamily="serif-monospace"
+                />
                 <RadioButton
                         android:text="Notch"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/radioButton4"
-                        android:textSize="14sp"
-                        android:minHeight="36dp"/>
+                        android:textSize="16sp"
+                        android:minHeight="36dp"
+                        android:fontFamily="serif-monospace"
+                />
+
             </RadioGroup>
             <Button
                     android:text="Submit"
@@ -72,7 +97,10 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/button"
                     android:layout_gravity="center_horizontal"
-                    android:textSize="14sp"/>
+                    android:textSize="14sp" android:onClick="submitQuestion"
+                    android:fontFamily="serif-monospace"
+            />
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
