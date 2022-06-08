@@ -1,4 +1,2 @@
-# bp-fall-2021-quizapp
-BP Fall 2021 Project Skeleton
-
-Hi Fall 2021 Blueprint SWE fellows! Clone this project skeleton to get started making your own Android Quiz Application :)
+a quiz application built through paired programming during our software engineering fellowship 
+using Java and Andriod Studio
